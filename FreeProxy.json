@@ -59,29 +59,30 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
+      "est01-vlr01.tcp-reset-club.net": [
+        "185.155.96.152",
+        "185.155.96.153",
+        "185.155.96.154"
+      ],
       "ru-bridge.atlanta-internet.ru": [
-        "37.18.14.129",
+        "89.221.203.194",
+        "95.215.108.206",
+        "81.90.31.31",
         "81.90.31.2",
-        "91.210.106.29",
-        "91.218.115.205",
-        "94.103.2.82",
         "158.255.1.171",
+        "91.218.115.211",
+        "37.18.14.129",
+        "37.18.14.176",
+        "91.218.115.205",
+        "213.176.19.130",
+        "37.18.14.170",
         "37.18.14.186",
         "37.18.14.78",
         "141.105.64.145",
-        "37.18.14.176",
-        "213.176.19.130",
-        "81.90.31.31",
-        "91.218.115.211",
-        "89.221.203.194",
-        "37.18.14.170",
+        "91.218.115.213",
+        "91.210.106.29",
         "89.221.203.193",
-        "95.215.108.206",
-        "91.218.115.213"
-      ],
-      "ru-cdn.ultima.foundation": [
-        "188.225.81.19",
-        "188.225.80.10"
+        "94.103.2.82"
       ]
     },
     "servers": [
@@ -146,13 +147,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "87.242.103.25",
-            "port": 8443,
+            "address": "185.155.96.153",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "xtls-rprx-vision",
-                "id": "f55fcf65-247e-4c66-8946-de1637b26cc0",
+                "id": "2efa59e5-1d96-440f-8217-ff7bebf2dcfd",
                 "level": 8
               }
             ]
@@ -163,15 +164,17 @@
         "network": "tcp",
         "realitySettings": {
           "allowInsecure": false,
-          "publicKey": "cynncQk7kKzEQaExg-FN7pMqFaZPSXEi_Ggy7AXXmVg",
-          "serverName": "aliusfilms.ru",
-          "shortId": "3f8ad1",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR
+          "serverName": "hls-svod.itunes.apple.com",
+          "shortId": "86e999a2cdc2",
+
+"show": false,
+          "spiderX": "/"
         },
         "security": "reality",
         "tcpSettings": {
-
-"header": {
+          "header": {
             "type": "none"
           }
         }
@@ -187,13 +190,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "213.176.19.127",
-            "port": 8443,
+            "address": "est01-vlr01.tcp-reset-club.net",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "xtls-rprx-vision",
-                "id": "669be00c-67b4-4b87-b08f-311c45abced2",
+                "id": "c533bf19-aff3-4e5f-b1ba-4c546dc19a29",
                 "level": 8
               }
             ]
@@ -204,12 +207,23 @@
         "network": "tcp",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "safari",
-          "publicKey": "FscaEWx0paNBzL7GWHj4Fll7Xc-KxdhKgTthBAnByWI",
-          "serverName": "pingless.com",
-          "show": false
+          "fingerprint": "chrome",
+          "publicKey": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR
+          "serverName": "hls-svod.itunes.apple.com",
+          "shortId": "d3b13f31",
+          "show": false,
+          "spiderX": "/"
         },
         "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        },
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -217,47 +231,6 @@
         }
       },
       "tag": "proxy-2"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "188.225.81.19",
-            "port": 2443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "2dfa740c-8069-4993-8b96-c3e5dc540593",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "qq",
-          "publicKey": "FcZ6-LZS5HHqAJ8YwFV_Gu_WxrMuylqxYjBu-1CLVRI",
-          "serverName": "eh.vk.com",
-          "shortId": "a9725715bf4c62ff",
-          "show": false
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-3"
     },
     {
       "mux": {
@@ -286,7 +259,7 @@
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "random",
-          "publicKey": "cjM-gNYIiNglmuM7AUymiDT6InmwdtWoSUeeMEONj0w",
+          "publicKey": "cjM-gNYIiNglmuM7AUymiDT6InmwdtWoSUeeM
           "serverName": "static.rutube.ru",
           "shortId": "aaaaaaaa",
           "show": false
@@ -307,7 +280,7 @@
           }
         }
       },
-      "tag": "proxy-4"
+      "tag": "proxy-3"
     },
     {
       "mux": {
@@ -318,39 +291,70 @@
       "settings": {
         "vnext": [
           {
-            "address": "ru-cdn.ultima.foundation",
+            "address": "213.176.19.127",
+            "port": 8443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "xtls-rprx-vision",
+                "id": "669be00c-67b4-4b87-b08f-311c45abced2",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "safari",
+          "publicKey": "FscaEWx0paNBzL7GWHj4Fll7Xc-KxdhKgTthB
+          "serverName": "pingless.com",
+          "show": false
+        },
+        "security": "reality",
+        "tcpSettings": {
+          "header": {
+            "type": "none"
+          }
+        }
+      },
+      "tag": "proxy-4"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+
+},
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "188.225.80.10",
             "port": 2443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "xtls-rprx-vision",
-                "id": "2dfa740c-8069-4993-8b96-c3e5dc540593",
+                "id": "4aa980fb-b1f8-45ca-90d0-46ebeca227a0",
                 "level": 8
               }
             ]
           }
-
-]
+        ]
       },
       "streamSettings": {
         "network": "tcp",
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "qq",
-          "publicKey": "FcZ6-LZS5HHqAJ8YwFV_Gu_WxrMuylqxYjBu-1CLVRI",
+          "publicKey": "FcZ6-LZS5HHqAJ8YwFV_Gu_WxrMuylqxYjBu-
           "serverName": "eh.vk.com",
           "show": false
         },
         "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
         "tcpSettings": {
           "header": {
             "type": "none"
