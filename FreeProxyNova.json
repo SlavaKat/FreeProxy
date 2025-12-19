@@ -59,13 +59,7 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "fr16.tcpdoor.net": "145.223.68.120",
-      "configline.fastly140.hosting-ip.com": [
-        "140.248.189.242",
-        "140.248.137.249",
-        "140.248.161.228"
-      ],
-      "hels3.vlessok.store": "178.173.249.15"
+      "fr16.tcpdoor.net": "145.223.68.120"
     },
     "servers": [
       "1.1.1.1",
@@ -129,13 +123,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "95.163.215.93",
-            "port": 8443,
+            "address": "27.50.48.102",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "b89d0b93-0ce0-424d-b9ab-92102acd5b84",
+                "flow": "",
+                "id": "5ca102f1-41cc-4731-84cc-6cdcd07e3424",
                 "level": 8
               }
             ]
@@ -143,21 +137,22 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
           "allowInsecure": false,
-          "fingerprint": "qq",
-          "publicKey": "ccfP5xSIpFgQVJIXA4Yj7fZ9Agjc9JVHvESTv3hnZjQ",
-          "serverName": "api-maps.yandex.ru",
-          "shortId": "62094d6a0b771c25",
-          "show": false,
-          "spiderX": "/"
+          "alpn": [
+            "h3"
+          ],
+          "fingerprint": "random",
+          "serverName": "vless.hubp.de",
+          "show": false
         },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
+        "wsSettings": {
+          "headers": {
+            "Host": "vless.hubp.de"
+          },
+          "path": "/snippets/ip=tp50000.kr.proxyip.fgfw.eu.org:50000"
         }
       },
       "tag": "proxy-1"
@@ -171,8 +166,94 @@
       "settings": {
         "vnext": [
           {
+            "address": "27.50.48.8",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "602b380a-9fdf-4425-bc07-aae9a95cfc4b",
 
-"address": "fr16.tcpdoor.net",
+"level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "h3"
+          ],
+          "fingerprint": "random",
+          "serverName": "vless.hubp.de",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "vless.hubp.de"
+          },
+          "path": "/snippets/ip=tp50000.kr.proxyip.fgfw.eu.org:50000"
+        }
+      },
+      "tag": "proxy-2"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "154.211.8.18",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "29187857-4a1f-4d1e-88eb-0016771e0dbb",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "allowInsecure": false,
+          "alpn": [
+            "h3"
+          ],
+          "fingerprint": "random",
+          "serverName": "vless.hubp.de",
+          "show": false
+        },
+        "wsSettings": {
+          "headers": {
+            "Host": "vless.hubp.de"
+          },
+          "path": "/?ed=2560"
+        }
+      },
+      "tag": "proxy-3"
+    },
+    {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "fr16.tcpdoor.net",
             "port": 443,
             "users": [
               {
@@ -213,142 +294,7 @@
           }
         }
       },
-      "tag": "proxy-2"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "configline.fastly140.hosting-ip.com",
-            "port": 80,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "",
-                "id": "TELEGRAM-CONFiGLiNE-80",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "xhttp",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "xhttpSettings": {
-          "host": "aaeman.global.ssl.fastly.net",
-          "mode": "auto",
-          "path": "/telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE,telegram-CONFiGLiNE?ed=2048"
-        }
-      },
-      "tag": "proxy-3"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "hels3.vlessok.store",
-            "port": 443,
-            "users": [
-              {
-                "encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "7405cd73-01d9-48d5-ada9-6905378d3975",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "wffi6nrJbxOiA0g7IuiXB4FZ7tkFtb9eRkPS9UvWPks",
-          "serverName": "disk.yandex.ru",
-          "shortId": "9ec7e0",
-          "show": false,
-          "spiderX": "/"
-        },
-        "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
       "tag": "proxy-4"
-    },
-    {
-      "mux": {
-        "concurrency": -1,
-        "enabled": false
-      },
-      "protocol": "vless",
-      "settings": {
-        "vnext": [
-          {
-            "address": "178.173.249.15",
-            "port": 443,
-            "users": [
-              {
-
-"encryption": "none",
-                "flow": "xtls-rprx-vision",
-                "id": "7405cd73-01d9-48d5-ada9-6905378d3975",
-                "level": 8
-              }
-            ]
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "realitySettings": {
-          "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "wffi6nrJbxOiA0g7IuiXB4FZ7tkFtb9eRkPS9UvWPks",
-          "serverName": "disk.yandex.ru",
-          "shortId": "9ec7e0",
-          "show": false,
-          "spiderX": "/"
-        },
-        "security": "reality",
-        "tcpSettings": {
-          "header": {
-            "type": "none"
-          }
-        }
-      },
-      "tag": "proxy-5"
     },
     {
       "protocol": "freedom",
@@ -400,7 +346,8 @@
         "ip": [
           "geoip:private"
         ],
-        "outboundTag": "direct",
+
+"outboundTag": "direct",
         "type": "field"
       },
       {
