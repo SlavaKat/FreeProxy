@@ -59,7 +59,8 @@
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
       ],
-      "fr16.tcpdoor.net": "145.223.68.120"
+      "fr16.tcpdoor.net": "145.223.68.120",
+      "gbr09.tcpnet.fun": "213.232.236.168"
     },
     "servers": [
       "1.1.1.1",
@@ -166,13 +167,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "27.50.48.8",
+            "address": "154.211.8.18",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "602b380a-9fdf-4425-bc07-aae9a95cfc4b",
+                "id": "29187857-4a1f-4d1e-88eb-0016771e0dbb",
 
 "level": 8
               }
@@ -196,7 +197,7 @@
           "headers": {
             "Host": "vless.hubp.de"
           },
-          "path": "/snippets/ip=tp50000.kr.proxyip.fgfw.eu.org:50000"
+          "path": "/?ed=2560"
         }
       },
       "tag": "proxy-2"
@@ -210,13 +211,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "154.211.8.18",
+            "address": "27.50.48.8",
             "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "",
-                "id": "29187857-4a1f-4d1e-88eb-0016771e0dbb",
+                "id": "602b380a-9fdf-4425-bc07-aae9a95cfc4b",
                 "level": 8
               }
             ]
@@ -239,7 +240,7 @@
           "headers": {
             "Host": "vless.hubp.de"
           },
-          "path": "/?ed=2560"
+          "path": "/snippets/ip=tp50000.kr.proxyip.fgfw.eu.org:50000"
         }
       },
       "tag": "proxy-3"
@@ -297,6 +298,59 @@
       "tag": "proxy-4"
     },
     {
+      "mux": {
+        "concurrency": -1,
+        "enabled": false
+      },
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "gbr09.tcpnet.fun",
+            "port": 443,
+            "users": [
+              {
+                "encryption": "none",
+                "flow": "",
+                "id": "d57dc7ce-799e-4551-bb3b-38a8ebadc9d1",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "grpcSettings": {
+          "authority": "",
+          "health_check_timeout": 20,
+          "idle_timeout": 60,
+          "multiMode": false,
+          "serviceName": "grpc"
+        },
+        "network": "grpc",
+        "realitySettings": {
+          "allowInsecure": false,
+          "fingerprint": "firefox",
+          "publicKey": "EKaGc9mOTr_3irpc8TCzJ8zCXmQGyE54KGxAAJ_PgHM",
+          "serverName": "www.samsung.com",
+
+"shortId": "5fb8e84d",
+          "show": false
+        },
+        "security": "reality",
+        "sockopt": {
+          "domainStrategy": "UseIP",
+          "happyEyeballs": {
+            "interleave": 2,
+            "maxConcurrentTry": 4,
+            "prioritizeIPv6": false,
+            "tryDelayMs": 250
+          }
+        }
+      },
+      "tag": "proxy-5"
+    },
+    {
       "protocol": "freedom",
       "settings": {
         "domainStrategy": "UseIP"
@@ -313,7 +367,7 @@
       "tag": "block"
     }
   ],
-  "remarks": "[🆓]ProxyNova Авто выбор",
+  "remarks": "[🆓]ProxyNova ❯ Авто выбор",
   "routing": {
     "balancers": [
       {
@@ -346,8 +400,7 @@
         "ip": [
           "geoip:private"
         ],
-
-"outboundTag": "direct",
+        "outboundTag": "direct",
         "type": "field"
       },
       {
