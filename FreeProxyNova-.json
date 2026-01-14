@@ -58,31 +58,6 @@
         "77.88.8.1",
         "2a02:6b8::feed:0ff",
         "2a02:6b8:0:1::feed:0ff"
-      ],
-      "est01-vlr01.tcp-reset-club.net": [
-        "185.155.96.152",
-        "185.155.96.153",
-        "185.155.96.154"
-      ],
-      "ru-bridge.atlanta-internet.ru": [
-        "89.221.203.194",
-        "95.215.108.206",
-        "81.90.31.31",
-        "81.90.31.2",
-        "158.255.1.171",
-        "91.218.115.211",
-        "37.18.14.129",
-        "37.18.14.176",
-        "91.218.115.205",
-        "213.176.19.130",
-        "37.18.14.170",
-        "37.18.14.186",
-        "37.18.14.78",
-        "141.105.64.145",
-        "91.218.115.213",
-        "91.210.106.29",
-        "89.221.203.193",
-        "94.103.2.82"
       ]
     },
     "servers": [
@@ -147,13 +122,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "185.155.96.153",
-            "port": 443,
+            "address": "146.185.241.5",
+            "port": 52006,
             "users": [
               {
                 "encryption": "none",
                 "flow": "xtls-rprx-vision",
-                "id": "2efa59e5-1d96-440f-8217-ff7bebf2dcfd",
+                "id": "62770d79-dc4d-07d0-b01c-ea30399725aa",
                 "level": 8
               }
             ]
@@ -165,12 +140,10 @@
         "realitySettings": {
           "allowInsecure": false,
           "fingerprint": "chrome",
-          "publicKey": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR
-          "serverName": "hls-svod.itunes.apple.com",
-          "shortId": "86e999a2cdc2",
-
-"show": false,
-          "spiderX": "/"
+          "publicKey": "4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik",
+          "serverName": "max.ru",
+          "shortId": "d8c6b58bcbb0c323",
+          "show": false
         },
         "security": "reality",
         "tcpSettings": {
@@ -190,15 +163,17 @@
       "settings": {
         "vnext": [
           {
-            "address": "est01-vlr01.tcp-reset-club.net",
-            "port": 443,
+            "address": "95.163.250.213",
+            "port": 52006,
             "users": [
               {
                 "encryption": "none",
                 "flow": "xtls-rprx-vision",
-                "id": "c533bf19-aff3-4e5f-b1ba-4c546dc19a29",
+                "id": "62770d79-dc4d-07d0-b01c-ea30399725aa",
                 "level": 8
-              }
+
+
+}
             ]
           }
         ]
@@ -207,23 +182,12 @@
         "network": "tcp",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "chrome",
-          "publicKey": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR
-          "serverName": "hls-svod.itunes.apple.com",
-          "shortId": "d3b13f31",
-          "show": false,
-          "spiderX": "/"
+          "publicKey": "4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik",
+          "serverName": "max.ru",
+          "shortId": "d8c6b58bcbb0c323",
+          "show": false
         },
         "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -241,13 +205,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "ru-bridge.atlanta-internet.ru",
-            "port": 8443,
+            "address": "84.201.164.23",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "xtls-rprx-vision",
-                "id": "669be00c-67b4-4b87-b08f-311c45abced2",
+                "id": "07095332-84b5-4d94-a259-9a0d13ba108f",
                 "level": 8
               }
             ]
@@ -258,22 +222,13 @@
         "network": "tcp",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "random",
-          "publicKey": "cjM-gNYIiNglmuM7AUymiDT6InmwdtWoSUeeM
-          "serverName": "static.rutube.ru",
-          "shortId": "aaaaaaaa",
+          "fingerprint": "chrome",
+          "publicKey": "6MBskgCzwyJi9_G1EnoUJOj8ZHU8HkvhIchQ3OIl1mQ",
+          "serverName": "cdnv-img.perekrestok.ru",
+          "shortId": "c66077b9e0825624",
           "show": false
         },
         "security": "reality",
-        "sockopt": {
-          "domainStrategy": "UseIP",
-          "happyEyeballs": {
-            "interleave": 2,
-            "maxConcurrentTry": 4,
-            "prioritizeIPv6": false,
-            "tryDelayMs": 250
-          }
-        },
         "tcpSettings": {
           "header": {
             "type": "none"
@@ -291,13 +246,13 @@
       "settings": {
         "vnext": [
           {
-            "address": "213.176.19.127",
-            "port": 8443,
+            "address": "51.250.65.209",
+            "port": 443,
             "users": [
               {
                 "encryption": "none",
                 "flow": "xtls-rprx-vision",
-                "id": "669be00c-67b4-4b87-b08f-311c45abced2",
+                "id": "4371ad14-b981-4699-bedf-83fb79bde3e6",
                 "level": 8
               }
             ]
@@ -308,9 +263,10 @@
         "network": "tcp",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "safari",
-          "publicKey": "FscaEWx0paNBzL7GWHj4Fll7Xc-KxdhKgTthB
-          "serverName": "pingless.com",
+          "fingerprint": "chrome",
+          "publicKey": "FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg",
+          "serverName": "ads.x5.ru",
+          "shortId": "17802e8ff84f12df",
           "show": false
         },
         "security": "reality",
@@ -326,19 +282,18 @@
       "mux": {
         "concurrency": -1,
         "enabled": false
-
-},
+      },
       "protocol": "vless",
       "settings": {
         "vnext": [
           {
-            "address": "188.225.80.10",
-            "port": 2443,
+            "address": "51.250.19.203",
+            "port": 1488,
             "users": [
               {
                 "encryption": "none",
                 "flow": "xtls-rprx-vision",
-                "id": "4aa980fb-b1f8-45ca-90d0-46ebeca227a0",
+                "id": "84b24517-2989-4f23-b6df-a12effc3c432",
                 "level": 8
               }
             ]
@@ -349,9 +304,9 @@
         "network": "tcp",
         "realitySettings": {
           "allowInsecure": false,
-          "fingerprint": "qq",
-          "publicKey": "FcZ6-LZS5HHqAJ8YwFV_Gu_WxrMuylqxYjBu-
-          "serverName": "eh.vk.com",
+          "fingerprint": "chrome",
+          "publicKey": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "serverName": "ads.x5.ru",
           "show": false
         },
         "security": "reality",
@@ -380,8 +335,10 @@
       "tag": "block"
     }
   ],
-  "remarks": "[🆓]Proxy Авто выбор",
-  "routing": {
+  "remarks": "[🆓]ProxyNova ❯ Авто выбор",
+
+
+"routing": {
     "balancers": [
       {
         "selector": [
